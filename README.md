@@ -1,5 +1,5 @@
-# Two Factor Demo
-This project is used to demonstrate two factor authentication.
+# Nextjs+NextAuth
+This project is starter nextjs application with nextauth implemented
 
 Setup
 1. Clone the repo.
