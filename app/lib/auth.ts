@@ -56,10 +56,6 @@ export const authOptions: NextAuthOptions = {
       return session;
     },
   },
-  pages: {
-    signIn: "/auth/login", // Custom sign-in page
-    error: "/auth/error", // Optional custom error page
-  },
   session: {
     strategy: "jwt",
   },

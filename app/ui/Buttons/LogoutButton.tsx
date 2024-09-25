@@ -13,7 +13,7 @@ export default function LogoutButton() {
         <ListItemIcon>
           <Logout />
         </ListItemIcon>
-        <ListItemText primary="Uitloggen" />
+        <ListItemText primary="Logout" />
       </ListItemButton>
     </>
   );
