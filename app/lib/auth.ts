@@ -52,14 +52,6 @@ export const authOptions: NextAuthOptions = {
     async session({ session, token }: any) {
       if (session.user) {
         session.user.id = token.id as string;
-        // Fetch fresh user data from the database
-        await dbConnect();
-        const user: any = await User.findById(token.id).lean();
-        session.user.id = token.id as string;
-        if (user) {
-          session.user.twoFactorEnabled = user.twoFactorEnabled;
-          // Add any other user fields you need
-        }
       }
       return session;
     },
