@@ -45,7 +45,6 @@ export const authOptions: NextAuthOptions = {
     async jwt({ token, user }: { token: any; user: any }) {
       if (user) {
         token.id = user.id;
-        token.twoFactorEnabled = user.twoFactorEnabled;
       }
       return token;
     },
